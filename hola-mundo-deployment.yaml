@@ -1,4 +1,4 @@
-apiVersion: apps/v1 # Usa apps/v1beta2 para versiones anteriores a 1.9.0
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hola-mundo-deployment
@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: hola-mundo-deployment
-  replicas: 2 # indica al controlador que ejecute 2 pods
+  replicas: 2
   template:
     metadata:
       labels:
